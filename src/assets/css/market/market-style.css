@@ -10,7 +10,7 @@ body{
     width: 100vw ;
     height: 100vh ;
     overflow-x: hidden ;
-    background: url(/cointod/public/images/SL-0212121-40670-60.jpg) center/cover fixed ;
+    background-color: #082032 ;
 }
 
 li{
@@ -72,8 +72,7 @@ form{
 .main-part__table-container__coins-part{
     width: 100% ;
     background-color: #37392e8c ;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    background-color: #2C394B ;
     border-radius: 30px ;
 }
 
