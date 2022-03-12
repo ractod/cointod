@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="/cointod/src/assets/css/comparison/comparison-style.css">
+    <link rel="stylesheet" href="/cointod/src/assets/css/comparison/desktop.css" media="(min-width: 1367px)">
+    <link rel="stylesheet" href="/cointod/src/assets/css/comparison/laptop.css" media="(max-width: 1024px)">
+    <link rel="stylesheet" href="/cointod/src/assets/css/comparison/tablet.css" media="(max-width: 768px)">
+    <link rel="stylesheet" href="/cointod/src/assets/css/comparison/mobile.css" media="(max-width: 480px)">
+    <link rel="stylesheet" href="/cointod/public/header-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d922024054.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="navbar-part">
+        <section class="navbar-part__container">
+
+            <div class="navbar-part__conatiner__left-content">
+                <img src="/cointod/public/images/logo.png" id="logo-img">
+            </div>
+            <div class="navbar-part__conatiner__center-content">
+                <img src="/cointod/public/CoinTod.png" alt="" id="text-logo">
+            </div>
+            <div class="navbar-part__conatiner__right-content">
+                <ul class="navbar-part__right-content__links-container">
+                    <li class="navbar-part__right-content-links"><a href="/cointod/index.html">home</a></li>
+                    <li class="navbar-part__right-content-links"><a href="/cointod/src/pages/exchange/exchnage.html">Exchanges</a></li>
+                    <li class="navbar-part__right-content-links"><a href="/cointod/src/pages/market/market.html">Market</a></li>
+                    <li class="navbar-part__right-content-links"><a href="/cointod/src/pages/comparison/comparison.html">Comparison</a></li>
+                    <i class="fa-solid fa-bars"></i>
+                    <li class="navbar-part__right-content-links"><a href="/cointod/src/pages/market/market.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                </ul>
+            </div>
+
+        </section>
+
+        <menu class="menu-part">
+            <ul class="menu-part__container">
+                <li class="menu-part__container__links"><a href="/cointod/index.html">home</a></li>
+                <li class="menu-part__container__links"><a href="/cointod/src/pages/exchange/exchnage.html">Exchanges</a></li>
+                <li class="menu-part__container__links"><a href="/cointod/src/pages/market/market.html">Market</a></li>
+                <li class="menu-part__container__links"><a href="/cointod/src/pages/comparison/comparison.html">Comparison</a></li>
+            </ul>
+        </menu>
+    </nav>
+    
+    <main class="main-part">
+        <section class="main-part__container">
+
+            <div class="main-part__container__left-content">
+                <div class="search-bar">
+                    <input type="text" id="search-input" class="left-input" placeholder="search for coin">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <ul class="left-content__search-bar__result-container"></ul>
+                </div>
+
+                <div class="left-coin-information"></div>
+            </div>
+
+            <div class="main-part__container__right-content">
+
+                <div class="search-bar">
+                    <input type="text" id="search-input" class="right-input" placeholder="search for coin">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <ul class="right-content__search-bar__result-container"></ul>
+                </div>
+
+                <div class="right-coin-information"></div>
+            </div>
+        </section>
+    </main>
+    <script src="/cointod/public/header-action.js"></script>
+    <script src="/cointod/src/store/actions/comparison-action.js"></script>
+</body>
+</html>

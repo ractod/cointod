@@ -1,0 +1,135 @@
+/* استایل دادن به بخش اول */
+
+.main-part__landing-container{
+    padding: 20px 30px ;
+    margin: 10px 0 20px 0 ;
+}
+
+#coin-img{
+    display: none;
+}
+
+#portfolio-img{
+    width: 250px ;
+    height: 250px ;
+    margin-top: 10px ;
+}
+
+.main-part__landing-container{
+    flex-direction: column-reverse ;
+    justify-content: space-between ;
+    align-items: center ;
+    padding: 180px 0;
+}
+
+.main-part__left-content__text{
+    text-align: center ;
+}
+
+.main-part__left-content__text h1{
+    font-size: 20px;
+}
+
+.main-part__left-content__text p{
+    font-size: 12px ;
+}
+
+.main-part__left-content__text{
+    width: 240px ;
+}
+
+/* استایل دادن به بخش لیست برتین ها */
+
+.top-list-part__container{
+    padding: 23px  ;
+}
+
+.top-list-part{
+    padding: 10px 10px 40px 10px ;
+}
+
+.swiper-slide__top-content h1{
+    font-size: 20px ;
+}
+
+.swiper-slide__bottom-content p{
+    font-size: 16px ;
+}
+
+.fa-angle-left , .fa-angle-right{
+    visibility: hidden ;
+}
+
+
+/* استایل دادن به لیست ارز ها */
+
+.coins-part__conins-conatiner__table-header{
+    padding: 0 ;
+}
+
+.coins-part__conins-conatiner__table-header h3{
+    font-size: 8px ;
+}
+
+.main-part__table-container{
+    padding: 30px 10px ;
+}
+
+.coins img{
+    width: 15px ;
+    height: 15px ;
+}
+
+.coins p{
+    font-size: 6px ;
+    width: 5px ;
+}
+
+/* استایل دادن به بخش نمایش ارز ها */
+
+.show-coins-part___third-content{
+    overflow-y: visible ;
+}
+
+.show-coins-part__container{
+    overflow-y: scroll ;
+}
+
+.show-coins-part__container::-webkit-scrollbar{
+    background: none ;
+}
+
+.show-coins-part__container::-webkit-scrollbar-thumb{
+    background-color:#CBCDC3;
+    border-radius: 20px ;
+}
+
+.show-coins-part__second-content{
+    flex-direction: column ;
+}
+
+.seond-content__right-text{
+    margin: 5px 0  ;
+}
+
+.show-coins-part__container{
+    width: 90vw ;
+}
+
+.firt-content__left-text p{
+    font-size: 20px ;
+}
+
+.firt-content__left-text img{
+    width: 30px ;
+    height: 30px ;
+}
+
+
+.seond-content__left-text p, .seond-content__right-text p{
+    font-size: 16px;
+}
+
+.show-coins-part___third-content{
+    font-size: 14px ;
+}

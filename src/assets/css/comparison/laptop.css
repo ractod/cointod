@@ -1,0 +1,23 @@
+.main-part{
+    padding: 100px 60px 30px 60px  ;
+}
+
+.main-part__container{
+    padding: 30px 20px ;
+}
+
+.coin-information__top-content h3{
+    font-size: 20px ;
+}
+
+.coin-information__bottom-content p{
+    font-size: 14px ;
+}
+
+.main-part__container__right-content{
+    margin-top: 30px ;
+}
+
+input{
+    margin-bottom: 20px ;
+}

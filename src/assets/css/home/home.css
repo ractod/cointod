@@ -1,0 +1,382 @@
+*{
+    padding: 0 ;
+    margin: 0 ;
+    font-family: 'Alata', sans-serif;
+    box-sizing: border-box ;
+    color: #EEE5E5 ;
+}
+
+body{
+    width: 100vw ;
+    height: 100vh ;
+    background-color: #CBCDC3 ;
+    overflow-x: hidden ;
+}
+
+li{
+    list-style: none ;
+}
+
+a{
+    text-decoration: none ;
+    color: blue;
+}
+
+:root{
+    scroll-behavior: smooth ;
+}
+
+
+/* main part start */
+
+.main-part__landing-container{
+    width: 100vw ;
+    height: 100vh ;
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center ;
+    padding: 0 100px  ;
+}
+
+.main-part__landing-container__left-content{
+    display: flex ;
+    flex-direction: column ;
+}
+
+.main-part__left-content__text{
+    width: 418px ;
+    height: 168px ;
+}
+
+.main-part__left-content__text h1{
+    color: black ;
+    font-size: 40px ;
+    margin-bottom: 15px ;
+}
+
+.main-part__left-content__text p{
+    color: black ;
+}
+
+#portfolio-img{
+    width: 420px ;
+    height: 420px ;
+}
+
+#coin-img{
+    width: 382px ;
+    height: 382px ;
+    position: absolute ;
+    top: 20% ;
+    left: 2%;
+    animation: coinAnimation 2s infinite ease-in-out ;
+    z-index: -1 ;
+}
+
+@keyframes coinAnimation {
+    0%{
+        transform: translatey(0);
+    }
+    50%{
+        transform: translatey(20px);
+    }
+    100%{
+        transform: translatey(0);
+    }
+}
+
+/* top list start */
+
+.top-list-part{
+    width: 100vw ;
+    padding: 10px 140px 40px 140px ;
+}
+
+.top-list-part__title{
+    width: 100% ;
+    display: flex ;
+    justify-content: center ;
+}
+
+.top-list-part__title h1{
+    display: inline;
+    color: black ;
+    background-color: #30303021 ; 
+    font-size: 30px ;
+    padding: 10px 30px ;
+    border-top-left-radius: 20px ;
+    border-top-right-radius: 20px ;
+}
+
+.top-list-part__container{
+    width: 100% ;
+    height: 300px ;
+    padding: 20px 60px ;
+    background-color:#30303021 ;
+    border-radius: 20px ;
+    position: relative;
+    overflow: hidden ;
+}
+
+.fa-angle-right{
+    position: absolute ;
+    font-size: 40px ;
+    color: black ;
+    right: 10px ;
+    top: 41% ;
+    transition: all .15s linear;
+    padding: 10px ;
+    border-radius: 10px ;
+}
+
+.fa-angle-left{
+    position: absolute ;
+    font-size: 40px ;
+    color: black ;
+    left: 10px ;
+    top: 41% ;
+    transition: all .15s linear;
+    padding: 10px ;
+    border-radius: 10px ;
+}
+
+.fa-angle-left:hover , .fa-angle-right:hover{
+    background-color: rgba(0, 0, 0, 0.699) ;
+    color: white ;
+    z-index: 2 ;
+    cursor: pointer;
+}
+
+.swiper-wrapper{
+    width: 100% ;
+    height: 100% ;
+    display: flex ;
+    align-items: center ;
+}
+
+.swiper-slide{
+    height: 10px ;
+    width: 100px ;
+    display: flex ;
+    align-items: center ;
+    flex-direction: column;
+    justify-content: space-between ;
+    background-color:#37392ecb;
+    border-radius: 15px ;
+    padding: 10px ;
+    transition: all .15s linear ;
+}
+
+.swiper-slide:hover{
+    cursor: pointer;
+    background-color:#37392ede ;
+}
+
+.swiper-slide__top-content{
+    width: 100% ;
+    display: flex ;
+    flex-direction: column ;
+    align-items: center ;
+}
+
+.swiper-slide__top-content h1{
+    margin-top: 5px ;
+}
+
+.swiper-slide__top-content img{
+    width: 80px ;
+    height: 80px ;
+}
+
+.swiper-slide__bottom-content p{
+    color: white ;
+}
+
+/* table start  */
+
+.main-part__table-container{
+    padding: 30px 120px ;
+}
+
+.main-part__table-container__coins-part{
+    width: 100% ;
+    background-color: #37392E ;
+    border-radius: 30px ;
+}
+
+.table-container__coins-part__coins-container{
+    padding: 20px ; 
+    position: relative ;
+}
+
+.coins-part__conins-conatiner__table-header{
+    width: 100%  ;
+    height: 50px ;
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center ;
+    border-bottom: 4px solid #EEE5E5;
+    padding: 0 20px ;
+}
+
+.coins-part__conins-conatiner__table-header div{
+    display: flex ;
+}
+
+
+.coins{
+    width: 100% ;
+    height: 50px ;
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center ;
+    border-bottom: 2px solid #eee5e598;
+    padding: 0 10px ;
+    transition: all .2s linear ;
+}
+
+.coins:hover{
+    background-color: #cbcdc331 ;
+    cursor: pointer;
+}
+
+
+.fa-circle-notch{
+    font-size: 40px ;
+    margin-top: 20px ;
+    margin-left: 47%;
+    animation: loading 1s infinite linear ;
+}
+
+@keyframes loading {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.coins p{
+    display: flex ;
+    text-align: center ;
+    justify-content: center ;
+    width: 30px ;
+}
+
+.last{
+    margin-right: 5%;
+}
+
+.show-coins-part{
+    width: 100vw ;
+    height: 100vh ;
+    display: FLEX ;
+    justify-content: center ;
+    align-items: center ;
+    background-color: #74747477;
+    position: fixed ;
+    top: 0 ;
+    z-index: 3 ;
+    backdrop-filter: blur(2px);
+    display: none ;
+}
+
+.show-coins-part__first-content{
+    display: flex ;
+    justify-content: space-between 
+}
+
+.fa-xmark{
+    font-size: 35px ;
+    color: black ;
+    cursor: pointer;
+}
+
+.coin-name:hover{
+    color: #12798bb2 ;
+    text-decoration: underline ;
+}
+
+.show-coins-part__container{
+    width: 70vw ;
+    height: 90vh ;
+    background-color: white ;
+    padding: 30px ;
+    border-radius: 30px ;
+}
+
+.firt-content__left-text{
+    display: flex ;
+    align-items: center ;
+}
+
+.firt-content__left-text p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black ;
+    font-size: 30px ;
+    margin-left: 30px ;
+}
+
+.show-coins-part__second-content{
+    display: flex ;
+    margin-top: 5% ;
+}
+
+.seond-content__right-text{
+    margin-left: 35% ;
+}
+
+.seond-content__right-text p , .seond-content__left-text p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600 ;
+    color: black ;
+    font-size: 20px ;
+    margin-top: 10px ;
+}
+
+.show-coins-part___third-content{
+    width: 100% ;
+    height: 40% ;
+    margin-top: 40px ;
+    overflow-y: scroll ;
+    font-size: 18px ;
+    color: black ;
+    border-top: 4px solid rgba(0, 0, 0, 0.342) ;
+    padding: 10px ;
+}
+
+.show-coins-part___third-content::-webkit-scrollbar{
+    background: none ;
+}
+
+.show-coins-part___third-content::-webkit-scrollbar-thumb{
+    background-color:#CBCDC3;
+    border-radius: 20px ;
+}
+
+.show-coin-loading i{
+    font-size: 65px ;
+    color: black ;
+    margin-top: 22% ;
+    margin-left: 47% ;
+}
+
+.firt-content__right-text i{
+    color: black ;
+}
+
+.display{
+    display: none ;
+}
+
+.error{
+    color: red ;
+    position: absolute ;
+    left: 45% ;
+}
+
+.firt-content__right-text .fa-xmark{
+    color: black ;
+}

@@ -1,0 +1,40 @@
+/* استایل دادن به لیست ارز ها */
+
+.main-part__table-container{
+    margin-top: 80px ;
+}
+
+
+.main-part__table-container{
+    padding: 30px 140px ;
+}
+
+.coins{
+    height: 60px ;
+}
+
+.coins img{
+    width: 40px ;
+    height: 40px ;
+}
+
+.coins p{
+    font-size: 18px ;
+    width: 5px ;
+}
+
+/* استایل دادن به بخش نمایش ارز ها */
+
+.firt-content__left-text img{
+    width: 70px ;
+    height: 70px ;
+}
+
+
+.seond-content__left-text p, .seond-content__right-text p{
+    font-size: 30px;
+}
+
+.show-coins-part___third-content{
+    font-size: 25px ;
+}

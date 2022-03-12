@@ -1,0 +1,21 @@
+/* استایل دادن به لیست صرافی ها */
+
+.main-part__table-container{
+    padding: 30px 140px ;
+}
+
+.exchange{
+    height: 60px ;
+}
+
+.exchange img{
+    width: 40px ;
+    height: 40px ;
+}
+
+.exchange p{
+    font-size: 18px ;
+    width: 5px ;
+}
+
+

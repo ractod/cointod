@@ -1,0 +1,83 @@
+/* استایل دادن به بخش اول */
+
+.main-part__landing-container{
+    padding: 20px 160px ;
+}
+
+#coin-img{
+    width: 700px ;
+    height: 700px ;
+}
+
+#portfolio-img{
+    width: 600px ;
+    height: 600px ;
+}
+
+.main-part__left-content__text h1{
+    font-size: 55px;
+}
+
+.main-part__left-content__text p{
+    font-size: 22px ;
+}
+
+.main-part__left-content__text{
+    width: 520px ;
+}
+
+/* استایل دادن به بخش لیست برتین ها */
+
+.top-list-part__container{
+    height: 350px ;
+}
+
+.top-list-part{
+    padding: 10px 140px 40px 140px ;
+}
+
+.swiper-slide__top-content h1{
+    font-size: 24px ;
+}
+
+.swiper-slide__bottom-content p{
+    font-size: 20px ;
+}
+
+
+
+/* استایل دادن به لیست ارز ها */
+
+.main-part__table-container{
+    padding: 30px 140px ;
+}
+
+.coins{
+    height: 60px ;
+}
+
+.coins img{
+    width: 40px ;
+    height: 40px ;
+}
+
+.coins p{
+    font-size: 18px ;
+    width: 5px ;
+}
+
+/* استایل دادن به بخش نمایش ارز ها */
+
+.firt-content__left-text img{
+    width: 70px ;
+    height: 70px ;
+}
+
+
+.seond-content__left-text p, .seond-content__right-text p{
+    font-size: 30px;
+}
+
+.show-coins-part___third-content{
+    font-size: 25px ;
+}

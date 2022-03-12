@@ -1,0 +1,118 @@
+/* استایل دادن به بخش اول */
+
+.main-part__landing-container{
+    padding: 20px 30px ;
+    margin: 10px 0 50px 0 ;
+}
+
+#portfolio-img{
+    width: 350px ;
+    height: 350px ;
+    margin-top: 10px ;
+}
+
+.main-part__landing-container{
+    flex-direction: column-reverse ;
+    justify-content: space-between ;
+    align-items: center ;
+    padding: 180px 0;
+}
+
+.main-part__left-content__text{
+    text-align: center ;
+}
+
+.main-part__left-content__text h1{
+    font-size: 30px;
+}
+
+.main-part__left-content__text p{
+    font-size: 14px ;
+}
+
+.main-part__left-content__text{
+    width: 320px ;
+}
+
+/* استایل دادن به بخش لیست برتین ها */
+
+.top-list-part{
+    padding: 10px 20px 40px 20px ;
+}
+
+.swiper-slide__top-content h1{
+    font-size: 25px ;
+}
+
+.swiper-slide__bottom-content p{
+    font-size: 18px ;
+}
+
+.fa-angle-left , .fa-angle-right{
+    visibility: hidden ;
+}
+
+
+/* استایل دادن به لیست ارز ها */
+
+.coins-part__conins-conatiner__table-header{
+    padding: 0 ;
+}
+
+.coins-part__conins-conatiner__table-header h3{
+    font-size: 12px ;
+}
+
+.main-part__table-container{
+    padding: 30px 20px ;
+}
+
+.coins p{
+    font-size: 9px ;
+    width: 5px ;
+}
+
+/* استایل دادن به بخش نمایش ارز ها */
+
+.show-coins-part___third-content{
+    overflow-y: visible ;
+}
+
+.show-coins-part__container{
+    overflow-y: scroll ;
+}
+
+.show-coins-part__container::-webkit-scrollbar{
+    background: none ;
+}
+
+.show-coins-part__container::-webkit-scrollbar-thumb{
+    background-color:#CBCDC3;
+    border-radius: 20px ;
+}
+
+.show-coins-part__second-content{
+    flex-direction: column ;
+}
+
+.seond-content__right-text{
+    margin: 5px 0  ;
+}
+
+.show-coins-part__container{
+    width: 90vw ;
+}
+
+.firt-content__left-text img{
+    width: 70px ;
+    height: 70px ;
+}
+
+
+.seond-content__left-text p, .seond-content__right-text p{
+    font-size: 20px;
+}
+
+.show-coins-part___third-content{
+    font-size: 18px ;
+}

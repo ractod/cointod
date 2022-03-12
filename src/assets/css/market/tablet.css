@@ -1,0 +1,67 @@
+/* استایل دادن به لیست ارز ها */
+
+.main-part__table-container{
+    margin-top: 80px ;
+}
+
+.coins-part__conins-conatiner__table-header{
+    padding: 0 ;
+}
+
+.coins-part__conins-conatiner__table-header h3{
+    font-size: 12px ;
+}
+
+.main-part__table-container{
+    padding: 30px 20px ;
+}
+
+.coins p{
+    font-size: 9px ;
+    width: 5px ;
+}
+
+/* استایل دادن به بخش نمایش ارز ها */
+
+.show-coins-part___third-content{
+    overflow-y: visible ;
+}
+
+.show-coins-part__container{
+    overflow-y: scroll ;
+}
+
+.show-coins-part__container::-webkit-scrollbar{
+    background: none ;
+}
+
+.show-coins-part__container::-webkit-scrollbar-thumb{
+    background-color:#CBCDC3;
+    border-radius: 20px ;
+}
+
+.show-coins-part__second-content{
+    flex-direction: column ;
+}
+
+.seond-content__right-text{
+    margin: 5px 0  ;
+}
+
+.show-coins-part__container{
+    width: 90vw ;
+}
+
+.firt-content__left-text img{
+    width: 70px ;
+    height: 70px ;
+}
+
+
+.seond-content__left-text p, .seond-content__right-text p{
+    font-size: 20px;
+}
+
+.show-coins-part___third-content{
+    font-size: 18px ;
+}

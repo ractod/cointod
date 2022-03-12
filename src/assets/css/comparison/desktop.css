@@ -1,0 +1,15 @@
+.main-part{
+    padding: 100px 120px 30px 120px  ;
+}
+
+.main-part__container{
+    padding: 30px 100px ;
+}
+
+.coin-information__top-content p{
+    font-size: 30px ;
+}
+
+.coin-information__bottom-content p{
+    font-size: 25px ;
+}

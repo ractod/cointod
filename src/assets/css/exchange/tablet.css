@@ -1,0 +1,27 @@
+/* استایل دادن به لیست صرافی ها */
+
+.fa-globe{
+    font-size: 18px ;
+}
+
+.main-part__table-container{
+    margin-top: 80px ;
+}
+
+.exchange-part__exchange-conatiner__table-header{
+    padding: 0 ;
+}
+
+.exchange-part__exchange-conatiner__table-header h3{
+    font-size: 8px ;
+}
+
+.main-part__table-container{
+    padding: 30px 20px ;
+}
+
+.exchange p{
+    font-size: 9px ;
+    width: 5px ;
+}
+

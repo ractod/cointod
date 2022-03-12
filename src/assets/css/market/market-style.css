@@ -1,0 +1,263 @@
+*{
+    padding: 0 ;
+    margin: 0 ;
+    font-family: 'Alata', sans-serif;
+    box-sizing: border-box ;
+    color: #EEE5E5 ;
+}
+
+body{
+    width: 100vw ;
+    height: 100vh ;
+    overflow-x: hidden ;
+    background: url(/cointod/public/images/SL-0212121-40670-60.jpg) center/cover fixed ;
+}
+
+li{
+    list-style: none ;
+}
+
+a{
+    text-decoration: none ;
+    color: blue ;
+}
+
+:root{
+    scroll-behavior: smooth ;
+}
+
+
+.search-bar__container{
+    width: 100vw ;
+    height: 50px ;
+    background-color: #020201 ;
+    position: absolute ;
+    top: 60px ;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: all .3s linear ;
+}
+
+form{
+    position: relative;
+}
+
+#search-button{
+    background: none ;
+    outline: none ;
+    border: none ;
+    position: absolute ;
+    top: 15px  ;
+    left: 10px  ;
+}
+
+#search-input{
+    width: 100% ;
+    height: 50px ;
+    background: transparent ;
+    outline: none ;
+    border: none ;
+    padding-left: 50px ;
+    font-size: 20px ;
+}
+
+.clip{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+.main-part__table-container{
+    padding: 120px ;
+}
+
+.main-part__table-container__coins-part{
+    width: 100% ;
+    background-color: #37392e8c ;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 30px ;
+}
+
+.table-container__coins-part__coins-container{
+    padding: 20px ; 
+    position: relative ;
+}
+
+.coins-part__conins-conatiner__table-header{
+    width: 100%  ;
+    height: 50px ;
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center ;
+    border-bottom: 4px solid #EEE5E5;
+    padding: 0 20px ;
+}
+
+.coins{
+    width: 100% ;
+    height: 70px ;
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center ;
+    border-bottom: 2px solid #eee5e598;
+    padding: 0 10px ;
+    transition: all .2s linear ;
+}
+
+.coins:hover{
+    background-color: #cbcdc331 ;
+    cursor: pointer;
+}
+
+.fa-circle-notch{
+    font-size: 40px ;
+    margin-top: 20px ;
+    animation: loading 1s infinite linear ;
+}
+
+@keyframes loading {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.coins p{
+    display: flex ;
+    text-align: center ;
+    justify-content: center ;
+    width: 30px ;
+}
+
+.last{
+    margin-right: 5%;
+}
+
+.coin-name:hover{
+    color: #12798bb2 ;
+    text-decoration: underline ;
+}
+
+.fa-arrows-rotate{
+    margin-left: 48% ;
+    margin-bottom: 10px ;
+    font-size: 30px ;
+    transition: all .15s linear ;
+}
+
+.fa-arrows-rotate:hover{
+    color: #CBCDC3 ;
+    cursor: pointer;
+}
+
+.loading{
+    animation: loading 1.5s infinite linear;
+}
+
+.show-coins-part{
+    width: 100vw ;
+    height: 100vh ;
+    display: FLEX ;
+    justify-content: center ;
+    align-items: center ;
+    background-color: #74747477;
+    position: fixed ;
+    top: 0 ;
+    z-index: 3 ;
+    backdrop-filter: blur(2px);
+    display: none ;
+}
+
+.show-coins-part__first-content{
+    display: flex ;
+    justify-content: space-between 
+}
+
+.fa-xmark{
+    font-size: 35px ;
+    color: black ;
+    cursor: pointer;
+}
+
+.show-coins-part__container{
+    width: 70vw ;
+    height: 90vh ;
+    background-color: white ;
+    padding: 30px ;
+    border-radius: 30px ;
+}
+
+.firt-content__left-text{
+    display: flex ;
+    align-items: center ;
+}
+
+.firt-content__left-text p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black ;
+    font-size: 30px ;
+    margin-left: 30px ;
+}
+
+.show-coins-part__second-content{
+    display: flex ;
+    margin-top: 5% ;
+}
+
+.seond-content__right-text{
+    margin-left: 40% ;
+}
+
+.seond-content__right-text p , .seond-content__left-text p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600 ;
+    color: black ;
+    font-size: 20px ;
+    margin-top: 10px ;
+}
+
+.show-coins-part___third-content{
+    width: 100% ;
+    max-height: 40% ;
+    margin-top: 40px ;
+    overflow-y: scroll ;
+    font-size: 18px ;
+    color: black ;
+    border-top: 4px solid rgba(0, 0, 0, 0.342) ;
+    padding: 10px ;
+}
+
+.show-coins-part___third-content::-webkit-scrollbar{
+    background: none ;
+}
+
+.show-coins-part___third-content::-webkit-scrollbar-thumb{
+    background-color: #CBCDC3 ;
+    border-radius: 20px ;
+}
+
+.show-coin-loading i{
+    font-size: 65px ;
+    color: black ;
+    margin-top: 22% ;
+    margin-left: 47% ;
+}
+
+.display{
+    display: none ;
+}
+
+.error{
+    color: red ;
+    margin-left: 43% ;
+}
+
+.test{
+    width: 600px;
+    height: 600px ;
+}
+
+.firt-content__right-text .fa-xmark{
+    color: black ;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoinTod - market</title>
+    <link rel="stylesheet" href="/cointod/src/assets/css/market/market-style.css">
+    <link rel="stylesheet" href="/cointod/src/assets/css/market/desktop.css" media="(min-width: 1367px)">
+    <link rel="stylesheet" href="/cointod/src/assets/css/market/laptop.css" media="(max-width: 1024px)">
+    <link rel="stylesheet" href="/cointod/src/assets/css/market/tablet.css" media="(max-width: 768px)">
+    <link rel="stylesheet" href="/cointod/src/assets/css/market/mobile.css" media="(max-width: 480px)">
+    <link rel="stylesheet" href="/cointod/public/header-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d922024054.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="show-coins-part">
+        <div class="show-coins-part__container">
+            <div class="show-coin-loading">
+                <i class="fa-solid fa-circle-notch display"></i>
+            </div>
+        </div>
+    </section>
+
+    <nav class="navbar-part">
+        <section class="navbar-part__container">
+
+            <div class="navbar-part__conatiner__left-content">
+                <img src="/cointod/public/images/logo.png" id="logo-img">
+            </div>
+            <div class="navbar-part__conatiner__center-content">
+                <img src="/cointod/public/CoinTod.png" alt="" id="text-logo">
+            </div>
+            <div class="navbar-part__conatiner__right-content">
+                <ul class="navbar-part__right-content__links-container">
+                    <li class="navbar-part__right-content-links"><a href="/cointod/index.html">home</a></li>
+                    <li class="navbar-part__right-content-links"><a href="/cointod/src/pages/exchange/exchnage.html">Exchanges</a></li>
+                    <li class="navbar-part__right-content-links"><a href="/cointod/src/pages/market/market.html">Market</a></li>
+                    <li class="navbar-part__right-content-links"><a href="/cointod/src/pages/comparison/comparison.html">Comparison</a></li>
+                    <i class="fa-solid fa-bars"></i>
+                    <li class="navbar-part__right-content-links"><a><i class="fa-solid fa-magnifying-glass" id="navbar-search-icon"></i></a></li>
+                </ul>
+            </div>
+
+            
+        </section>
+
+        <menu class="menu-part">
+            <ul class="menu-part__container">
+                <li class="menu-part__container__links"><a href="/cointod/index.html">home</a></li>
+                <li class="menu-part__container__links"><a href="/cointod/src/pages/exchange/exchnage.html">Exchanges</a></li>
+                <li class="menu-part__container__links"><a href="/cointod/src/pages/market/market.html">Market</a></li>
+                <li class="menu-part__container__links"><a href="/cointod/src/pages/comparison/comparison.html">Comparison</a></li>
+            </ul>
+        </menu>
+
+        <section class="search-bar">
+            <div class="search-bar__container">
+                <form>
+                    <input type="text" id="search-input" placeholder="search for coin...">
+                    <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </section>
+        
+    </nav>
+    
+    <main class="main-part">
+        <section class="main-part__table-container">
+            <div class="main-part__table-container__coins-part">
+                <ul class="table-container__coins-part__coins-container">
+                    <li class="coins-part__conins-conatiner__table-header">
+                        <h3>logo</h3>
+                        <h3>Name</h3>
+                        <h3>year</h3>
+                        <h3>Price</h3>
+                        <h3>24H</h3>
+                        <h3>rank</h3>
+                        <h3>Market Cap</h3>
+                    </li>
+                </ul>
+                <i class="fa-solid fa-arrows-rotate"></i>
+            </div>
+        </section>
+    </main>
+
+    <script src="/cointod/public/header-action.js"></script>
+    <script src="/cointod/src/services/market/coins-load.js"></script>
+    <script src="/cointod/src/store/actions/market-action.js"></script>
+</body>
+</html>
