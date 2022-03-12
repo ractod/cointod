@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoinTod</title>
+    <link rel="stylesheet" href="/cointod/src/assets/css/home/home.css">
+    <link rel="stylesheet" href="/cointod/src/assets/css/home/desktop.css" media="(min-width: 1367px)">
+    <link rel="stylesheet" href="/cointod/src/assets/css/home/laptop.css" media="(max-width: 1024px)">
+    <link rel="stylesheet" href="/cointod/src/assets/css/home/tablet.css" media="(max-width: 768px)">
+    <link rel="stylesheet" href="/cointod/src/assets/css/home/mobile.css" media="(max-width: 480px)">
+    <link rel="stylesheet" href="/cointod/public/header-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d922024054.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+
+    <section class="show-coins-part">
+        <div class="show-coins-part__container">
+            <div class="show-coin-loading">
+                <i class="fa-solid fa-circle-notch display"></i>
+            </div>
+        </div>
+    </section>
+
+    <nav class="navbar-part">
+        <section class="navbar-part__container">
+
+            <div class="navbar-part__conatiner__left-content">
+                <img src="/cointod/public/images/logo.png" id="logo-img">
+            </div>
+            <div class="navbar-part__conatiner__center-content">
+                <img src="/cointod/public/CoinTod.png" alt="" id="text-logo">
+            </div>
+            <div class="navbar-part__conatiner__right-content">
+                <ul class="navbar-part__right-content__links-container">
+                    <li class="navbar-part__right-content-links"><a href="#home-part">home</a></li>
+                    <li class="navbar-part__right-content-links"><a href="/cointod/src/pages/exchange/exchnage.html">Exchanges</a></li>
+                    <li class="navbar-part__right-content-links"><a href="/cointod/src/pages/market/market.html">Market</a></li>
+                    <li class="navbar-part__right-content-links"><a href="/cointod/src/pages/comparison/comparison.html">Comparison</a></li>
+                    <i class="fa-solid fa-bars"></i>
+                    <li class="navbar-part__right-content-links"><a href="/cointod/src/pages/market/market.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                </ul>
+            </div>
+        
+        </section>
+    
+        <menu class="menu-part">
+            <ul class="menu-part__container">
+                <li class="menu-part__container__links"><a href="#home-part">home</a></li>
+                <li class="menu-part__container__links"><a href="/cointod/src/pages/exchange/exchnage.html">Exchanges</a></li>
+                <li class="menu-part__container__links"><a href="/cointod/src/pages/market/market.html">Market</a></li>
+                <li class="menu-part__container__links"><a href="/cointod/src/pages/comparison/comparison.html">Comparison</a></li>
+            </ul>
+        </menu>
+    </nav>
+
+    <main class="main-part">
+        <section class="main-part__landing-container" id="home-part">
+            <div class="main-part__landing-container__left-content">
+                <div class="main-part__left-content__coin-img">
+                    <img src="/cointod/public/images/Bitcoin-cuate.png" id="coin-img">
+                </div>
+                <div class="main-part__left-content__text">
+                    <h1>Welcome To CoinTod</h1>
+                    <p>
+                        If you are interested in crypto currency or you are a trader and you are looking for crypto currency information, you can see it all on this site and even get information about exchanges and compare your favorite currencies in the comparison section. the Cointod is always with you we are here to help all od you 
+                    </p>
+                </div>
+            </div>
+            <diov class="main-part__landing-container__right-content">
+                <img src="/cointod/public/images/Crypto portfolio-bro.png" id="portfolio-img">
+            </diov>
+        </section>
+
+        <section class="top-list-part">
+            <div class="top-list-part__title">
+                <h1>Trending</h1>
+            </div>
+            <div class="top-list-part__container">
+                <div class="swiper-wrapper">
+                </div>
+                <div class="swiper-wrapper__swiper-buttons">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-part__table-container">
+            <div class="main-part__table-container__coins-part">
+                <ul class="table-container__coins-part__coins-container">
+                    <li class="coins-part__conins-conatiner__table-header">
+                        <h3>logo</h3>
+                        <h3>Name</h3>
+                        <h3>Symbol</h3>
+                        <h3>Price</h3>
+                        <h3>24H</h3>
+                        <h3>rank</h3>
+                        <h3>Market Cap</h3>
+                    </li>
+                    <div class="loading">
+                        <i class="fa-solid"></i>
+                    </div>
+                </ul>
+            </div>
+        </section>
+       
+    </main>
+
+    <script src="/cointod/public/header-action.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/cointod/src/store/actions/home-action.js"></script>
+    <script src="/cointod/src/services/home/coins-load.js"></script>
+</body>
+</html>
