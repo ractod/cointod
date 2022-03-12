@@ -116,7 +116,7 @@ function closeShowSlectedCoin(event){
 
 function searchCoin(event){
     event.preventDefault()
-    console.log("first")
+    searchBar.classList.toggle("clip")
     const value = searchInput.value
     searchInput.value = ""
     list.innerHTML = ``
