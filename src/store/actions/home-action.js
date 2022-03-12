@@ -108,8 +108,19 @@ function closeShowSlectedCoin(event){
 
 // نمایش رمز ارز برتر انتخاب شده
 
+
+
 function showTopCoin(event){
-    if (event.target.classList[0] == "swiper-slide"){
+    let coinSelected
+    if ( event.target.classList[0] == "swiper-slide" ){
+        coinSelected = event.target
+    } else if ( event.target.className == 'swiper-slide__top-content'){
+        coinSelected = event.target.parentElement
+    } else if (event.target.tagName == "IMG" || event.target.tagName == "H1"){
+        coinSelected = event.target.parentElement.parentElement
+    }
+
+    if (coinSelected){
         showCoins.innerHTML = `
         <div class="show-coins-part__container">
             <div class="show-coin-loading">
@@ -120,7 +131,7 @@ function showTopCoin(event){
         showCoins.style.display = "flex"
         spinerLoading.classList.toggle("display")
         console.log("test")
-        coinName = event.target.children[0].children[1].innerText
+        coinName = coinSelected.children[0].children[1].innerText
         let coinID
         const promise = new Promise ((reslove,reject) => {
             reslove(
