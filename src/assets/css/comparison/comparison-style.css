@@ -9,7 +9,7 @@
 body{
     width: 100vw ;
     height: 100vh ;
-    background: url(/cointod/public/images/26146.jpg) center/cover fixed ;
+    background-color: #082032 ;
     overflow-x: hidden ;
 }
 
@@ -43,9 +43,7 @@ a{
     align-items: center ;
     justify-content: space-between ;
     padding: 30px 100px ;
-    background-color: #24251c5b ;
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(20px);
+    background-color: #2C394B ;
     border-radius: 30px ;
 }
 
