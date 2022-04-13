@@ -9,10 +9,7 @@ list.addEventListener("click" , showSelectedCoin )
 showCoins.addEventListener("click" , closeShowSlectedCoin )
 topListContainer.addEventListener("click" , showTopCoin )
 
-
 // نمایش ارز انتخاب شده
-
-
 
 function showSelectedCoin(event){
     let coinSelected 
@@ -100,6 +97,12 @@ function showSelectedCoin(event){
 
 function closeShowSlectedCoin(event){
     if ( event.target.classList[1] == "fa-xmark"){
+        if ( showCoins.style.display == "flex" ){
+            showCoins.style.display = "none" 
+        }
+    }
+
+    if ( event.target.className == "show-coins-part"){
         if ( showCoins.style.display == "flex" ){
             showCoins.style.display = "none" 
         }
